@@ -1,0 +1,43 @@
+:root {
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --naranja:#fff9d2;
+    --naranjad:#ff8473;
+    --green:#2c7b90;
+}
+    
+body{
+    background: linear-gradient(to bottom, var(--naranjad),var(--naranja));
+    height: 100vh;
+    font-family: 'Prompt', sans-serif;
+}
+
+.galeria-leo {
+    padding: 10px;
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.galeria-leo > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+}
+
+.galeria-leo > div:hover{
+    flex: 5;
+    border-radius: 1rem;
+    border: 3px solid #252525;
+}
+
+h1 {
+    padding: 25px 0 1px;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--white);
+    
+}
